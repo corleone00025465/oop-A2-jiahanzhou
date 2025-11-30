@@ -1,6 +1,6 @@
 ﻿Name,Age,ID,TicketType,RideCount
-Scarlet,22,H001,Standard,6
-Tom,40,H002,VIP,18
-Uma,33,H003,Standard,2
-Victor,45,H004,VIP,22
-Wendy,28,H005,Standard,9
+Scarlet,22,H001,Standard,8
+Tom,40,H002,VIP,25
+Uma,33,H003,Standard,3
+Victor,45,H004,VIP,30
+Wendy,28,H005,Standard,11
