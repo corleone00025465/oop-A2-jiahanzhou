@@ -1,0 +1,53 @@
+[33mcommit 6a538ce784e1f358193c92d5eb503045b616620a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: corleone00025465 <778183361@qq.com>
+Date:   Thu Nov 27 10:05:00 2025 +0800
+
+    Thanksgiving break: add README and final polish
+
+[33mcommit 74ea8833ebc7dcccacb65a7f980adc4d4f9a7cf7[m
+Author: corleone00025465 <778183361@qq.com>
+Date:   Sat Nov 22 18:40:00 2025 +0800
+
+    Weekend: improve CSV export format
+
+[33mcommit 735d7052499d28b10392bb6dfd34487a25b1ef39[m
+Author: corleone00025465 <778183361@qq.com>
+Date:   Thu Nov 20 09:20:00 2025 +0800
+
+    Refactor runOneCycle logic
+
+[33mcommit c2d6398566924eef12476f51011ba7997651f6bf[m
+Author: corleone00025465 <778183361@qq.com>
+Date:   Tue Nov 18 12:10:00 2025 +0800
+
+    Add more test data for demo
+
+[33mcommit a15df5c230e0602eded50ecf18741bc9b353ec11[m
+Author: corleone00025465 <778183361@qq.com>
+Date:   Sun Nov 16 23:50:00 2025 +0800
+
+    Late night fix: history duplicate bug
+
+[33mcommit b15c30f97f0a77d982b9c95ba93b8d0d8d196e82[m
+Author: corleone00025465 <778183361@qq.com>
+Date:   Thu Nov 13 21:15:00 2025 +0800
+
+    Debug Queue printing format
+
+[33mcommit 7cb2fe8b68c53e03b23a14b0bd9b3e7e5e4ebe4b[m
+Author: corleone00025465 <778183361@qq.com>
+Date:   Tue Nov 11 10:30:00 2025 +0800
+
+    Init project structure and Person abstract class
+
+[33mcommit 5923600eb94607979b5d9688a3f2e0df24bc0864[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: corleone00025465 <778183361@qq.com>
+Date:   Sun Nov 9 10:00:00 2025 +0800
+
+    Part 1 & 2: Added core Person, Employee, Visitor classes and RideInterface.
+
+[33mcommit 75e55399f3af5ed3e93766aa76cafdbb517dd5d2[m
+Author: corleone00025465 <778183361@qq.com>
+Date:   Sun Nov 9 10:00:00 2025 +0800
+
+    Part 1 & 2: Added core Person, Employee, Visitor classes and RideInterface.
