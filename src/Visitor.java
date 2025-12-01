@@ -1,41 +1,34 @@
-// Visitor.java
-/**
- * Part 1: 具体类 (Concrete Class) - 继承自 Person。
- * 跟踪主题公园的访客，必须包含至少 2 个访客特有的实例变量 (ticketType, rideCount)。
- * 实现了 toCsvString() 方法用于 Part 6/7 的 I/O 机制。
- */
+// 3. Visitor.java   ← 重点！一定要有 getAge() 和 getName()
 public class Visitor extends Person {
-    private String ticketType;
-    private int rideCount;
+    private String ticketId;
+    private String membershipType;
 
-    // 默认构造函数
-    public Visitor() {
-        super();
-        this.ticketType = "Standard";
-        this.rideCount = 0;
+    public Visitor() {}
+
+    public Visitor(String name, int age, String phone, String ticketId, String membershipType) {
+        super(name, age, phone);
+        this.ticketId = ticketId;
+        this.membershipType = membershipType;
     }
 
-    // 参数化构造函数 (调用父类的构造函数)
-    public Visitor(String name, int age, String id, String ticketType, int rideCount) {
-        super(name, age, id);
-        this.ticketType = ticketType;
-        this.rideCount = rideCount;
-    }
+    public String getTicketId() { return ticketId; }
+    public void setTicketId(String ticketId) { this.ticketId = ticketId; }
+    public String getMembershipType() { return membershipType; }
+    public void setMembershipType(String membershipType) { this.membershipType = membershipType; }
 
-    // Getters and Setters for Visitor 属性
-    public String getTicketType() { return ticketType; }
-    public void setTicketType(String ticketType) { this.ticketType = ticketType; }
-    public int getRideCount() { return rideCount; }
-    public void setRideCount(int rideCount) { this.rideCount = rideCount; }
-
-    // 用于 Part 6/7 I/O 机制：将访客数据格式化为 CSV 字符串
-    public String toCsvString() {
-        // 格式: name, age, id, ticketType, rideCount
-        return getName() + "," + getAge() + "," + getId() + "," + ticketType + "," + rideCount;
-    }
+    // 必须重写这两个方法，否则 Comparator 找不到！
+    @Override
+    public String getName() { return super.getName(); }
+    @Override
+    public int getAge() { return super.getAge(); }
 
     @Override
     public String toString() {
-        return "Visitor: " + super.toString() + ", Ticket: " + ticketType + ", Rides Taken: " + rideCount;
+        return String.format("Visitor → %-12s │ Age:%3d │ Phone:%11s │ Ticket:%-8s │ Member:%s",
+                getName(), getAge(), super.getPhone(), ticketId, membershipType);
+    }
+
+    public String toCSV() {
+        return getName() + "," + getAge() + "," + super.getPhone() + "," + ticketId + "," + membershipType;
     }
 }
