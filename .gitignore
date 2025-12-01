@@ -1,0 +1,17 @@
+# IntelliJ IDEA 项目文件
+.idea/
+*.iml
+*.iws
+
+# 编译输出
+out/
+target/
+build/
+
+# 运行时生成的 csv 文件
+*.csv
+history.csv
+ride_history_backup.csv
+
+# Mac 系统文件
+.DS_Store
